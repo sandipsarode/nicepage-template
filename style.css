@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+/* -------------------------------------
+      Navigation Bar 
+  --------------------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar .menu li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Design Navigation Bar */
+
+@media (max-width: 768px) {
+  .navbar .menu {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #f2f2f2;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .navbar .menu.show {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    color: #000;
+  }
+}
+
+/* -------------------------------------
+      Hero Section 
+  --------------------------------------- */
+.hero {
+  height: 100vh;
+  background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 100px;
+  color: #000000;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-bottom: 100px;
+}
+
+.hero h4 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  max-width: 400px;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.hero .rm-btn {
+  display: inline-block;
+  background-color: #ff6008;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .rm-btn:hover {
+  background-color: #b94100;
+}
+
+/* Responsive Design Hero Section */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h4 {
+    font-size: 1rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .hero .rm-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .navbar .menu {
+    top: 50px;
+    right: 10px;
+  }
+}
