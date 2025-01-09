@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Lexend", sans-serif;
+  font-family: "Poppins";
 }
 
 /* -------------------------------------
@@ -60,7 +60,6 @@ body {
     right: 20px;
     background-color: #f2f2f2;
     width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     gap: 20px;
   }
@@ -114,7 +113,8 @@ body {
   margin-bottom: 30px;
 }
 
-.hero .rm-btn {
+.hero .rm-btn,
+.booking-sec-btn {
   display: inline-block;
   background-color: #ff6008;
   color: #fff;
@@ -125,7 +125,8 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.hero .rm-btn:hover {
+.hero .rm-btn:hover,
+.booking-sec-btn:hover {
   background-color: #b94100;
 }
 
@@ -172,4 +173,92 @@ body {
     top: 50px;
     right: 10px;
   }
+}
+
+/* -------------------------------------
+      Our Progress Section
+  --------------------------------------- */
+
+.our-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0cccf;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.our-progress .op-cards {
+  /* padding: 50px; */
+  background-color: #fff;
+  width: 360px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.op-cards h1 {
+  font-size: 2.5rem;
+  color: #f0cccf;
+  margin-bottom: 20px;
+}
+
+.op-cards p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* -------------------------------------
+      Booking Section 
+  --------------------------------------- */
+
+.booking-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0 50px 0;
+}
+
+.book {
+  width: 585px;
+  height: 373px;
+  padding: 25px;
+}
+
+.book-now-reg p {
+  margin-bottom: 20px;
+}
+
+.book-now-reg h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.book-now-content {
+  background-color: #ff6008;
+
+  color: white;
+}
+
+.book-now-content p {
+  margin-bottom: 20px;
+}
+
+.book-now-img-one {
+  background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book-now-img-two {
+  background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
