@@ -114,6 +114,7 @@ body {
 }
 
 .hero .rm-btn,
+#form-submit-btn,
 .booking-sec-btn {
   display: inline-block;
   background-color: #ff6008;
@@ -126,6 +127,7 @@ body {
 }
 
 .hero .rm-btn:hover,
+#form-submit-btn:hover,
 .booking-sec-btn:hover {
   background-color: #b94100;
 }
@@ -261,4 +263,58 @@ body {
   background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* -------------------------------------
+      Contact Form Section 
+  --------------------------------------- */
+
+.contact-form {
+  background-color: #cbbee7;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.contact-form .cf-img {
+  background-image: url("https://assets.nicepagecdn.com/11a8ddce/4242949/images/Untit7led-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 494px;
+}
+
+.cf-form {
+  background-color: #f2f2f2;
+  padding: 30px;
+  width: 40%;
+}
+
+.cf-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cf-form input,
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cf-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cf-form button:hover {
+  background-color: #0056b3;
 }
