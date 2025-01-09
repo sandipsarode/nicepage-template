@@ -270,17 +270,23 @@ body {
   --------------------------------------- */
 
 .contact-form {
-  background-color: #cbbee7;
+  background-color: #ff6008;
   display: flex;
   /* flex-wrap: wrap; */
-  justify-content: center;
+  justify-content: left;
   padding-top: 50px;
   padding-bottom: 50px;
-  gap: 30px;
+  /* gap: 30px; */
+  /* margin-left: 50px; */
+  /* margin-left: 10%; */
+  padding-left: 8%;
+
+  background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-73312500.jpg");
+  background-size: cover;
 }
 
 .contact-form .cf-img {
-  background-image: url("https://assets.nicepagecdn.com/11a8ddce/4242949/images/Untit7led-1.png");
+  /* background-image: url("https://assets.nicepagecdn.com/11a8ddce/4242949/images/Untit7led-1.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 570px;
@@ -291,6 +297,8 @@ body {
   background-color: #f2f2f2;
   padding: 30px;
   width: 40%;
+  /* flex: 1; */
+  /* display: flex; */
 }
 
 .cf-form label {
