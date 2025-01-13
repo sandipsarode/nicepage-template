@@ -78,7 +78,7 @@ body {
       Hero Section 
   --------------------------------------- */
 .hero {
-  height: 100vh;
+  height: auto;
   background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,6 +135,10 @@ body {
 /* Responsive Design Hero Section */
 
 @media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -154,6 +158,10 @@ body {
 }
 
 @media (max-width: 425px) {
+  .hero {
+    background-size: contain;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
@@ -325,4 +333,27 @@ textarea {
 }
 .cf-form button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive Design Contact Form  */
+
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cf-form {
+    width: 100%;
+  }
+
+  .cf-form input,
+  textarea {
+    width: 100%;
+  }
+
+  .cf-form button {
+    width: 100%;
+  }
 }
